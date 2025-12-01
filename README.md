@@ -27,19 +27,19 @@ The Mars Exploration Program has successfully landed the **Rover-X** in the Jeze
 
 Open your terminal or command prompt and run the following command to download the mission files to your local machine:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone [https://github.com/your-username/mars-rover-mission.git](https://github.com/your-username/mars-rover-mission.git)   `
+```git clone [https://github.com/your-username/mars-rover-mission.git](https://github.com/your-username/mars-rover-mission.git)```   
 
 _(Note: Replace your-username with the actual username where this repo is hosted)_
 
 ### 2\. Navigate to the Mission Folder
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd mars-rover-mission   `
+```   cd MarsRover   ```
 
 ### 3\. Launch the Interface
 
 To test the current (broken) system, run:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python mars_rover_skeleton.py   `
+```python mars_rover.py ```
 
 📝 Your Tasks
 -------------
