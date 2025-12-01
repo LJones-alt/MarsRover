@@ -75,6 +75,7 @@ while mission_active:
         
     elif command == 'scan':
         # TODO: Call the report_status method
+        rover.report_status()
         pass
 
     elif command == 'dig':
