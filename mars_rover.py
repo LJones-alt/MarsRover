@@ -29,6 +29,8 @@ class MarsRover:
         if "w" in direction:
             # then we are going north, lets increase y by 1
 
+            print(f"Moving NORTH, my new position is {self.x}")
+
 
         # TODO: Decrease self.battery by 5
         
