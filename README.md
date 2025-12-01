@@ -27,9 +27,9 @@ The Mars Exploration Program has successfully landed the **Rover-X** in the Jeze
 
 Open your terminal or command prompt and run the following command to download the mission files to your local machine:
 
-```git clone [https://github.com/your-username/mars-rover-mission.git](https://github.com/your-username/mars-rover-mission.git)```   
+```git clone https://github.com/LJones-alt/MarsRover.git```   
 
-_(Note: Replace your-username with the actual username where this repo is hosted)_
+_(Note: You can also fork this repo if you want your own version)_
 
 ### 2\. Navigate to the Mission Folder
 
