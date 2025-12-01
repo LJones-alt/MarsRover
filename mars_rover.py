@@ -8,9 +8,10 @@ class MarsRover:
         """
         self.name : str = name
         self.x=0
-        # TODO: Initialize self.x and self.y to 0
-        # TODO: Initialize self.battery to 100
-        # TODO: Initialize self.samples as an empty list
+        self.y=0
+        self.battery=100
+        self.samples=[]
+
         print(f"System: {self.name} initialized. Ready for mission.")
 
     def move(self, direction: str):
@@ -37,7 +38,7 @@ class MarsRover:
         # TODO: Print the movement action (e.g. "Moved North")
         pass
 
-    def collect_sample(self, sample_type):
+    def collect_sample(self, sample_type:str):
         """
         Adds a geological sample to the rover's storage.
         """
@@ -49,9 +50,9 @@ class MarsRover:
         """
         Prints the current coordinates, battery level, and collected samples.
         """
-        # TODO: Print current x and y coordinates
-        # TODO: Print current battery level
-        # TODO: Print the list of collected samples
+        print(f"Current Co-ord: {self.x}, {self.y}")
+        print(f"Battery level: {self.battery}")
+        print(f"Collected samples : {self.samples}")
         pass
 
 # --- MAIN MISSION CONTROL LOOP ---
