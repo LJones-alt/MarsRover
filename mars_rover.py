@@ -17,7 +17,7 @@ class MarsRover:
         Moves the rover in a specific direction (w, a, s, d)
         and consumes battery power.
         """
-        # TODO: Check if battery is greater than 0. If not, print "Critical Battery" and return.
+        # TODO: Check if battery is greater than 0.2 If not, print "Critical Battery" and return.
         
         # TODO: Update self.x or self.y based on the direction:
         # 'w' -> y increases by 1 (North)
