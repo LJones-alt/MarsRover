@@ -1,18 +1,19 @@
 import time
 
 class MarsRover:
-    def __init__(self, name):
+    def __init__(self, name:str):
         """
         Initializes the rover with a name, starting coordinates (0,0),
         a full battery (100), and an empty list for samples.
         """
-        self.name = name
+        self.name : str = name
+        self.x=0
         # TODO: Initialize self.x and self.y to 0
         # TODO: Initialize self.battery to 100
         # TODO: Initialize self.samples as an empty list
         print(f"System: {self.name} initialized. Ready for mission.")
 
-    def move(self, direction):
+    def move(self, direction: str):
         """
         Moves the rover in a specific direction (w, a, s, d)
         and consumes battery power.
@@ -24,6 +25,10 @@ class MarsRover:
         # 's' -> y decreases by 1 (South)
         # 'd' -> x increases by 1 (East)
         # 'a' -> x decreases by 1 (West)
+
+        if "w" in direction:
+            # then we are going north, lets increase y by 1
+
 
         # TODO: Decrease self.battery by 5
         
