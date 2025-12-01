@@ -42,8 +42,8 @@ class MarsRover:
         """
         Adds a geological sample to the rover's storage.
         """
-        # TODO: Append the sample_type to the self.samples list
-        # TODO: Print a confirmation message
+        self.samples.append(sample_type)
+        print(f"Collected sample : {sample_type}")
         pass
 
     def report_status(self):
@@ -79,7 +79,7 @@ while mission_active:
 
     elif command == 'dig':
         sample = input("What kind of sample? (rock/dust/ice): ")
-        # TODO: Call the collect_sample method
+        rover.collect_sample(sample)
         pass
 
     elif command in ['w', 'a', 's', 'd']:
