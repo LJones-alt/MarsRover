@@ -19,24 +19,28 @@ class MarsRover:
         Moves the rover in a specific direction (w, a, s, d)
         and consumes battery power.
         """
-        # TODO: Check if battery is greater than 0.2 If not, print "Critical Battery" and return.
+        # Check if battery is greater than 0. If not, print "Critical Battery" and return.
+        if self.battery <= 0:
+            print("Critical Battery! Cannot move.")
+            return
         
-        # TODO: Update self.x or self.y based on the direction:
-        # 'w' -> y increases by 1 (North)
-        # 's' -> y decreases by 1 (South)
-        # 'd' -> x increases by 1 (East)
-        # 'a' -> x decreases by 1 (West)
-
-        if "w" in direction:
-            # then we are going north, lets increase y by 1
-
-            print(f"Moving NORTH, my new position is {self.x}")
-
-
-        # TODO: Decrease self.battery by 5
+        # Update self.x or self.y based on the direction:
+        if direction == 'w':
+            self.y += 1
+            print(f"Moved NORTH. New position: ({self.x}, {self.y})")
+        elif direction == 's':
+            self.y -= 1
+            print(f"Moved SOUTH. New position: ({self.x}, {self.y})")
+        elif direction == 'd':
+            self.x += 1
+            print(f"Moved EAST. New position: ({self.x}, {self.y})")
+        elif direction == 'a':
+            self.x -= 1
+            print(f"Moved WEST. New position: ({self.x}, {self.y})")
         
-        # TODO: Print the movement action (e.g. "Moved North")
-        pass
+        # Decrease battery by 5
+        self.battery -= 5
+        print(f"Battery: {self.battery}%")
 
     def collect_sample(self, sample_type:str):
         """
@@ -84,8 +88,8 @@ while mission_active:
         pass
 
     elif command in ['w', 'a', 's', 'd']:
-        # TODO: Call the move method and pass the command as the direction
-        pass
+        # Call the move method and pass the command as the direction
+        rover.move(command)
 
     else:
         print("Invalid Command. Signal lost.")
